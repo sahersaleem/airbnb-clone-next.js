@@ -49,7 +49,7 @@ export  function CarouselComp({images}) {
                
                 <CardContent className="flex aspect-square items-center justify-center p-6">
                   
-              <Image src={urlFor(item).url()} alt="dnn" width={500} height={400}   className="h-[270px]  object-cover object-center w rounded-lg" priority={true}/>
+              <Link href={"/detail"}><Image src={urlFor(item).url()} alt="dnn" width={500} height={400}   className="h-[270px]  object-cover object-center w rounded-lg" priority={true}/></Link>
               
                 </CardContent>
             
