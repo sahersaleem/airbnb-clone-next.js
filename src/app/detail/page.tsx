@@ -7,7 +7,7 @@ import Host from '../components2/Host'
 import Footer from '../components/Footer'
 const page = () => {
   return (
-    <div >
+    <div>
   <Navbar/>
   <HeroSection/>
   <ThirdSection/>

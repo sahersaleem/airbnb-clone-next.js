@@ -41,13 +41,9 @@ const CommentSection = () => {
 
 const CommentSectionPage = () => {
   return (
-    <Wrapper><div className='h-screen w-full flex  flex-wrap mt-10 gap-10 border-b border-gray-400'>
+    <Wrapper><div className='xs:h-auto xs:pb-10 lg:pb-0 w-full flex  flex-wrap mt-10 gap-10 border-b border-gray-400 xs:items-center xs:justify-center lg:justify-start lg:items-start'>
     <CommentSection/>
     <CommentSection/>
-    <CommentSection/>
-    <CommentSection/>
-    <CommentSection/>
-   
     <CommentSection/>
   </div></Wrapper>
     

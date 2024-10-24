@@ -6,18 +6,18 @@ import { Button } from "@/components/ui/button";
 import Wrapper from "../components/Wrapper";
 const Host = () => {
   return (
-    <div className="w-full h-[60vh]">
+    <div className="w-full xs:h-auto lg:h-[80vh]">
       <Wrapper>
         <div className="pt-28 flex justify-center flex-col items-center">
           <h1 className="font-sans font-bold text-3xl pb-10">Meet Your Host</h1>
-          <div className="flex justify-center items-center gap-24">
+          <div className="flex justify-center items-center flex-col">
             <Card className="w-[400px] h-auto px-4 py-8 flex justify-between">
               <div className="flex flex-col items-center justify-center">
                 <Image
                   src={man}
                   alt="man"
                   width={150}
-                  className="object-cover object-center rounded-full"
+                  className="object-cover object-center rounded-full xs:w-[100px] lg:w-[150px]"
                 />
                 <h1 className="text-2xl font-bold font-sans">Peter</h1>
                 <h2 className="text-xl font-semibold font-sans">Host</h2>
@@ -38,7 +38,7 @@ const Host = () => {
               </div>
             </Card>
 
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-4 lg:my-10">
               <h1 className="text-2xl font-bold">Host Details</h1>
               <div>
                 {" "}

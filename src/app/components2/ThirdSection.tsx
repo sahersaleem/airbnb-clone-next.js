@@ -26,11 +26,11 @@ import CommentSection from "./CommentSection";
 const ThirdSection = () => {
   return (
     <Wrapper>
-      <div className="w-full h-screen flex gap-20 pt-28 ">
+      <div className="w-full xs:h-auto lg:h-screen flex xs:flex-col lg:flex-row gap-20 pt-28">
         {/* First div */}
-        <div className="w-[50vw] h-auto overflow-auto space-y-16 pb-8">
-          <div className="flex border border-gray-500 rounded-lg p-2 gap-8 items-center justify-center">
-            <div className="flex gap-1">
+        <div className=" xs:w-[100vw] lg:w-[50vw]  h-auto lg:overflow-auto space-y-16 pb-8 xs:flex lg:block xs:flex-col justify-center items-center">
+          <div className="flex border border-gray-500 rounded-lg p-2 lg:gap-8 items-center justify-center xs:flex-col lg:flex-row">
+            <div className="flex gap-1 ">
               {" "}
               <Image src={imageright} alt="image" width={40} height={40} />
               <h1 className="text-lg font-sans font-semibold text-center">
@@ -39,7 +39,7 @@ const ThirdSection = () => {
               <Image src={imageleft} alt="image" width={40} height={40} />
             </div>
 
-            <p className="font-sans text-center">
+            <p className="font-sans text-center xs:text-[12px] text-wrap">
               One Of the most loved homes on Airbnb Acoording to guest
             </p>
             <div className="flex flex-col border-r border-gray-500 px-3 items-center justify-center">
@@ -58,7 +58,7 @@ const ThirdSection = () => {
               alt="man"
               width={40}
               height={40}
-              className="object-center rounded-full"
+              className="object-center object-cover rounded-full"
             />
             <div>
               <h1 className="font-sans font-bold">Hosted By Milan</h1>
@@ -69,7 +69,7 @@ const ThirdSection = () => {
             <div className="flex space-x-2">
               <FaTrophy className="text-yellow-600 text-xl" />
               <div>
-                <h1 className="font-sans font-bold text-lg">Top 5% of homes</h1>
+                <h1 className="font-sans font-bold lg:text-lg">Top 5% of homes</h1>
                 <p className="text-gray-500">
                   This home is highly ranked based on ratings, reviews, and
                   reliability.
@@ -80,7 +80,7 @@ const ThirdSection = () => {
             <div className="flex space-x-2">
               <IoLocationOutline className="text-xl" />
               <div>
-                <h1 className="font-sans font-bold text-lg">
+                <h1 className="font-sans font-bold lg:text-lg">
                   Unbeatable location
                 </h1>
                 <p className="text-gray-500">
@@ -93,7 +93,7 @@ const ThirdSection = () => {
             <div className="flex space-x-2">
               <MdOutlineOtherHouses className="text-xl" />
               <div>
-                <h1 className="font-sans font-bold text-lg">
+                <h1 className="font-sans font-bold lg:text-lg">
                   City and garden views
                 </h1>
                 <p className="text-gray-500">
@@ -111,7 +111,7 @@ const ThirdSection = () => {
             </Link>
           </div>
           <div className="border-b border-gray-400 pb-10 ">
-            <p>
+            <p className="text-wrap">
               Have you ever thought about getting away from the hustle and
               bustle of São Paulo Imagine doing this while connecting with
               nature Connection & Nature is the perfect environment to
@@ -156,8 +156,8 @@ const ThirdSection = () => {
           </div>
           <div>
             <h1 className="font-sans font-bold text-3xl">What this place offers</h1>
-<div className="flex space-x-56 pt-7">
-            <div className="text-lg font-light space-y-4">
+<div className="flex xs:space-x-10 lg:space-x-56 pt-7">
+            <div className="xs:text-[12px] lg:text-lg font- xs:space-y-1 lg:space-y-4">
              <p>Courtyard view</p>
              <p>kitchen</p>
              <p>Courtyard view</p>
@@ -168,7 +168,7 @@ const ThirdSection = () => {
 
             </div>
             
-            <div className="text-lg font-light space-y-4">
+            <div className="xs:text-[12px] lg:text-lg font- xs:space-y-1 lg:space-y-4">
              <p>Courtyard view</p>
              <p>kitchen</p>
              <p>Courtyard view</p>
@@ -184,7 +184,7 @@ const ThirdSection = () => {
         </div>
 
         {/* Second div */}
-        <div>
+        <div className="xs:w-full  lg:w-auto xs:flex  xs:justify-center xs:items-center lg:justify-start lg:items-start">
           <Card className="w-[340px] box">
             <CardHeader>
               <CardTitle className="text-center">

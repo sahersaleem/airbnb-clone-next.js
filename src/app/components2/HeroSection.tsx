@@ -13,13 +13,13 @@ const HeroSection = () => {
   return (
     <div>
       <Wrapper>
-        <div className="flex justify-between mt-6">
+        <div className="flex xs:justify-center xs:items-center       lg:justify-between xs:flex-col lg:flex-row mt-6">
           <div>
-            <h1 className="text-2xl font-sans font-semibold">
+            <h1 className=" sm:text-base lg:text-2xl font-sans font-semibold">
               Ubud Tropical Paradise - Villa Bambu Blue
             </h1>
           </div>
-          <div className="flex justify-center items-center gap-5 ">
+          <div className="flex justify-center items-center xs:gap-2 lg:gap-5 ">
             {" "}
             <div className="flex justify-center items-center">
               <IoShareOutline />
@@ -31,17 +31,17 @@ const HeroSection = () => {
             </div>
           </div>
         </div>
-        <div className="mt-6 flex space-x-2">
+        <div className="mt-6 flex space-x-2 xs:flex-col lg:flex-row xs:justify-center xs:items-center">
           <div>
             <Image
               src={img1}
               alt="image"
               width={600}
               height={800}
-              className="rounded-lg w-[850px] h-auto"
+              className="rounded-lg xs:w-[300px] lg:w-[850px] h-auto"
             />
           </div>
-          <div className="flex gap-2 flex-wrap items-center">
+          <div className="flex gap-2 flex-wrap items-center justify-center xs:mt-5 lg:mt-0">
             {" "}
             <Image
               src={img2}
@@ -70,10 +70,10 @@ const HeroSection = () => {
           </div>
       
         </div>
-        <div className="mt-6">
+        <div className="mt-6 xs:text-center lg:text-left">
         <h1 className="text-xl font-sans font-semibold">Entire villa in Ubud, Indonesia</h1>
           <h1>6 guests 3bedrooms  3beds  3baths</h1>
-          <div className="flex space-x-3">
+          <div className="flex space-x-3 xs:justify-center xs:items-center lg:items-start lg:justify-start">
           <IoIosStarOutline className="inline-block text-xl mt-[4px]"/><span className="text-xl">4.82</span> 
        <Link href={""} className="underline font-bold text-lg">281 reviews</Link>
           </div>
