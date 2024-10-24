@@ -37,7 +37,7 @@ interface Card {
     return data;
   } catch (error: any) {
     console.log(error.message);
-    console.log("jnjfnjfnj")
+    
   }
 };
 

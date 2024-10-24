@@ -24,7 +24,7 @@ const SecondNavBar = () => {
         <div className="flex gap-14">
           <div className="flex gap-8 text-xl  ">
             <Link
-              href={"/"}
+              href={"/guest"}
               className="text-black/60 hover:text-black font-sans transition-all 0.2s ease-linear  flex items-center justify-center flex-col"
             >
               <GiAbstract047 />

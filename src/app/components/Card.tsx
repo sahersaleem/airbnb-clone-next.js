@@ -1,13 +1,12 @@
 import { Image } from "sanity";
 import { CarouselComp } from "../components/Carousal";
-// Import Client from sanity client
+
 import { client } from "@/sanity/lib/client";
-import { Card } from "@/components/ui/card";
 import Wrapper from "../components/Wrapper";
 import { fetchData } from "../arctic/page";
 import { Button } from "@/components/ui/button";
 // Created Card Interface
-interface Card {
+interface ICard {
   countryName: string;
   rating: string;
   images: Image;
@@ -24,7 +23,7 @@ interface Card {
 
 const Card = async() => {
   
-    const data: Card[] = await fetchData();
+    const data: ICard[] = await fetchData();
     console.log(data)
   
    return (

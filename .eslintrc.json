@@ -1,6 +1,5 @@
 {
   "extends": ["next/core-web-vitals", "next/typescript"],
-  "@typescript-eslint/no-require-imports": "ignore",
   "@typescript-eslint/no-unused-vars": "ignore",
-  "react/no-unescaped-entities":"ignore"
+  "react/no-unescaped-entities":"ignore",
 }
