@@ -24,6 +24,7 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover"
+import { Toast } from "@radix-ui/react-toast"
 
 const FormSchema = z.object({
   dob: z.date({
@@ -42,13 +43,10 @@ export function CalendarForm() {
   }, [])
 
   function onSubmit(data: z.infer<typeof FormSchema>) {
-    toast({
+    Toast({
       title: "You submitted the following values:",
-      description: (
-        <pre className="mt-2 w-[340px] rounded-md bg-slate-950 p-4">
-          <code className="text-white">{JSON.stringify(data, null, 2)}</code>
-        </pre>
-      ),
+    
+      
     })
   }
 

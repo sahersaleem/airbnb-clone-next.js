@@ -16,7 +16,7 @@ import Image from "next/image";
 import { HiOutlineSearch } from "react-icons/hi";
 import Link from "next/link";
 
-export default function GuestCount({text}) {
+export default function GuestCount({text}:{text:any}) {
   const [guestCount, setguestCount] = useState(0);
 
   const handleAddGuest = () => {

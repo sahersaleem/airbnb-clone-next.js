@@ -17,7 +17,7 @@ interface Card {
 }
 
 // fetch data fucntion
- export const fetchData = async () => {
+ export const generateStaticParams = async () => {
   try {
     const data = await client.fetch(`*[_type=="card"]{
       
@@ -43,7 +43,7 @@ interface Card {
 
 // component
 const page = async () => {
-  const data: Card[] = await fetchData();
+  const data: Card[] = await generateStaticParams();
    console.log(data)
  
   return (

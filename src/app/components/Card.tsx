@@ -3,7 +3,7 @@ import { CarouselComp } from "../components/Carousal";
 
 import { client } from "@/sanity/lib/client";
 import Wrapper from "../components/Wrapper";
-import { fetchData } from "../arctic/page";
+import { generateStaticParams } from "../arctic/page";
 import { Button } from "@/components/ui/button";
 // Created Card Interface
 interface ICard {
@@ -23,7 +23,7 @@ interface ICard {
 
 const Card = async() => {
   
-    const data: ICard[] = await fetchData();
+    const data: ICard[] = await generateStaticParams();
     console.log(data)
   
    return (

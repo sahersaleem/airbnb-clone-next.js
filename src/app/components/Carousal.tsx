@@ -19,7 +19,8 @@ import Link from "next/link";
 
 
 
-export  function CarouselComp({images}) {
+
+export  function CarouselComp({images}:{images:any}) {
  
   console.log(urlFor(images[0]).url())
   const [api, setApi] = React.useState<CarouselApi>();
