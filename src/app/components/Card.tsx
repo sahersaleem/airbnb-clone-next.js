@@ -1,7 +1,6 @@
 import { Image } from "sanity";
 import { CarouselComp } from "../components/Carousal";
 
-import { client } from "@/sanity/lib/client";
 import Wrapper from "../components/Wrapper";
 import { generateStaticParams } from "../arctic/page";
 import { Button } from "@/components/ui/button";
