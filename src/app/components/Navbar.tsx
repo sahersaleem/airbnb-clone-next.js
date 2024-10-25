@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import dynamic from "next/dynamic";
 import Wrapper from "./Wrapper";
 import Image from "next/image";
 import logo from "./../../.././public/images/logo.webp";
@@ -9,10 +10,9 @@ import { CiGlobe } from "react-icons/ci";
 import { LiaBarsSolid } from "react-icons/lia";
 import { FaCircleUser } from "react-icons/fa6";
 import { HiOutlineSearch } from "react-icons/hi";
-import { CalendarForm } from "./Calender";
 import Drop from "./Drop"
 import GuestCount from "./GuestCount"
-
+import { CalendarForm } from "./Calender";
 const Navbar = () => {
 
 
