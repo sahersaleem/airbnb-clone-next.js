@@ -6,12 +6,14 @@ import { Button } from "@/components/ui/button";
 import Wrapper from "../components/Wrapper";
 const Host = () => {
   return (
-    <div className="w-full xs:h-auto lg:h-[80vh]">
+    <div className="w-full xs:h-auto lg:h-[80vh] xs:px-5 lg:px-0">
+         <h1 className="font-sans font-bold text-2xl lg:mb-7 xs:mt-12 lg:mt-0 xs:px-5 lg:px-0">
+         Meet Your Host</h1>
       <Wrapper>
-        <div className="pt-28 flex justify-center flex-col items-center">
-          <h1 className="font-sans font-bold text-3xl pb-10">Meet Your Host</h1>
-          <div className="flex justify-center items-center flex-col">
-            <Card className="w-[400px] h-auto px-4 py-8 flex justify-between">
+        <div className="xs:pt-10 lg:pt-28 flex justify-center flex-col items-center">
+         
+          <div className="flex justify-center items-center flex-col xs:space-y-6 lg:space-y-0">
+            <Card className="xs:w-[320px] lg:w-[400px] h-auto px-4 py-8 flex justify-between">
               <div className="flex flex-col items-center justify-center">
                 <Image
                   src={man}

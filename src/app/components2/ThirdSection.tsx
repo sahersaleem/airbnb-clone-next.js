@@ -29,8 +29,8 @@ const ThirdSection = () => {
       <div className="w-full xs:h-auto lg:h-screen flex xs:flex-col lg:flex-row gap-20 pt-28">
         {/* First div */}
         <div className=" xs:w-[100vw] lg:w-[50vw]  h-auto lg:overflow-auto space-y-16 pb-8 xs:flex lg:block xs:flex-col justify-center items-center">
-          <div className="flex border border-gray-500 rounded-lg p-2 lg:gap-8 items-center justify-center xs:flex-col lg:flex-row">
-            <div className="flex gap-1 ">
+          <div className="flex border border-gray-500 rounded-lg  lg:gap-8 items-center justify-center xs:flex-col lg:flex-row">
+            <div className="flex gap-1 xs:flex items-center justify-center">
               {" "}
               <Image src={imageright} alt="image" width={40} height={40} />
               <h1 className="text-lg font-sans font-semibold text-center">
@@ -39,17 +39,17 @@ const ThirdSection = () => {
               <Image src={imageleft} alt="image" width={40} height={40} />
             </div>
 
-            <p className="font-sans text-center xs:text-[12px] text-wrap">
+            <p className="font-sans text-center xs:text-[9px] lg:text-[12px] xs:px-2">
               One Of the most loved homes on Airbnb Acoording to guest
             </p>
             <div className="flex flex-col border-r border-gray-500 px-3 items-center justify-center">
-              <p className="text-xl font-bold font-sans">5.0</p>{" "}
+              <p className="xs:text-lg lg:text-xl font-bold font-sans">5.0</p>{" "}
               <div className="flex items-center justify-center">
                 <StarFilledIcon /> <StarFilledIcon /> <StarFilledIcon />{" "}
                 <StarFilledIcon />
               </div>
             </div>
-            <h1 className="text-lg font-bold font-sans">147 reviews</h1>
+            <h1 className="lg:text-lg font-bold font-sans">147 reviews</h1>
           </div>
 
           <div className="flex gap-5  border-b border-gray-400 pb-4">
@@ -65,7 +65,7 @@ const ThirdSection = () => {
               <p className="text-gray-500">Superhost 2 years hosting</p>
             </div>
           </div>
-          <div className="flex gap-5  border-b border-gray-400 pb-4 flex-col">
+          <div className="flex gap-5  border-b border-gray-400 pb-4 flex-col xs:px-5 lg:px-0">
             <div className="flex space-x-2">
               <FaTrophy className="text-yellow-600 text-xl" />
               <div>
@@ -102,7 +102,7 @@ const ThirdSection = () => {
               </div>
             </div>
           </div>
-          <div className="flex px-2 py-3  bg-[#DDDD] rounded gap-3">
+          <div className="flex   bg-[#DDDD] rounded gap-3 xs:px-5 lg:px-2 lg:py-3" >
             <p className="font-sans font-medium">
               Some info is shown in its original language.{" "}
             </p>
@@ -110,8 +110,8 @@ const ThirdSection = () => {
               Translate
             </Link>
           </div>
-          <div className="border-b border-gray-400 pb-10 ">
-            <p className="text-wrap">
+          <div className="border-b border-gray-400 pb-10 xs:px-5 lg:px-2 lg:py-3">
+            <p className="text-wrap text-lg">
               Have you ever thought about getting away from the hustle and
               bustle of São Paulo Imagine doing this while connecting with
               nature Connection & Nature is the perfect environment to
@@ -127,11 +127,11 @@ const ThirdSection = () => {
             </Button>
           </div>
 
-          <div className=" border-b border-gray-400 pb-10">
+          <div className=" border-b border-gray-400 pb-10 xs:px-5 lg:px-2 lg:py-3">
             <h1 className="font-sans font-bold text-xl mb-7">
               Where you will sleep
             </h1>
-            <div className="flex gap-6">
+            <div className="flex gap-6 xs:flex-col lg:flex-row ">
               <div>
                 <Image
                   src={room1}
@@ -139,8 +139,8 @@ const ThirdSection = () => {
                   width={400}
                   className="h-[200px] rounded-lg"
                 />
-                <h1 className="font-semibold font-sans">bedroom</h1>
-                <p className="font-light font-sans">1 queen bed</p>
+                <h1 className=" font-sans font-bold">bedroom</h1>
+                <p className="font-light font-sans ">1 queen bed</p>
               </div>
               <div>
                 <Image
@@ -149,7 +149,7 @@ const ThirdSection = () => {
                   width={400}
                   className="h-[200px] rounded-lg"
                 />
-                <h1 className="font-semibold font-sans">living room</h1>
+                <h1 className="font-bold font-sans">living room</h1>
                 <p className="font-light font-sans">1 double bed</p>
               </div>
             </div>

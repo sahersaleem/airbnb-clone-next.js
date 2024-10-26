@@ -22,7 +22,7 @@ const SecondNavBar = () => {
         <div className="flex gap-14">
           <div className="flex gap-8 text-xl  ">
             <Link
-              href={"/arctic"}
+              href={"/"}
               className="text-black/60 hover:text-black font-sans transition-all 0.2s ease-linear  flex items-center justify-center flex-col"
             >
               <GiAbstract047 />
@@ -31,7 +31,7 @@ const SecondNavBar = () => {
               </span>
             </Link>
             <Link
-              href={"/arctic"}
+              href={"/"}
               className="text-black/60 hover:text-black font-sans transition-all 0.2s ease-linear  flex items-center justify-center flex-col"
             >
               <GoHome />
@@ -40,7 +40,7 @@ const SecondNavBar = () => {
               </span>
             </Link>
             <Link
-              href={"/arctic"}
+              href={"/"}
               className="text-black/60 hover:text-black font-sans transition-all 0.2s ease-linear  flex items-center justify-center flex-col"
             >
               <GiPalmTree />
@@ -49,7 +49,7 @@ const SecondNavBar = () => {
               </span>
             </Link>
             <Link
-              href={"/arctic"}
+              href={"/"}
               className="text-black/60 hover:text-black font-sans transition-all 0.2s ease-linear  flex items-center justify-center flex-col"
             >
               <MdOutlineBedroomChild />
@@ -58,7 +58,7 @@ const SecondNavBar = () => {
               </span>
             </Link>
             <Link
-              href={"/arctic"}
+              href={"/"}
               className="text-black/60 hover:text-black font-sans transition-all 0.2s ease-linear xs:hidden lg:flex items-center justify-center flex-col"
             >
               <MdOutlineFreeBreakfast />
@@ -67,7 +67,7 @@ const SecondNavBar = () => {
               </span>
             </Link>
             <Link
-              href={"/arctic"}
+              href={"/"}
               className="text-black/60 hover:text-black font-sans transition-all 0.2s ease-linear  xs:hidden lg:flex items-center justify-center flex-col"
             >
               <FaFireFlameSimple />
@@ -76,7 +76,7 @@ const SecondNavBar = () => {
               </span>
             </Link>
             <Link
-              href={"/arctic"}
+              href={"/"}
               className="text-black/60 hover:text-black font-sans transition-all 0.2s ease-linear xs:hidden lg:flex items-center justify-center flex-col"
             >
               <BsUmbrella />
@@ -85,7 +85,7 @@ const SecondNavBar = () => {
               </span>
             </Link>
             <Link
-              href={"/arctic"}
+              href={"/"}
               className="text-black/60 hover:text-black font-sans transition-all 0.2s ease-linear  xs:hidden sm:flex items-center justify-center flex-col"
             >
               <GiCornerFlag />
@@ -94,7 +94,7 @@ const SecondNavBar = () => {
               </span>
             </Link>
             <Link
-              href={"/arctic"}
+              href={"/"}
               className="text-black/60 hover:text-black font-sans transition-all 0.2s ease-linear  xs:hidden sm:flex items-center justify-center flex-col"
             >
               <GiCampingTent />

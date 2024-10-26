@@ -5,7 +5,7 @@ import { StarFilledIcon } from "@radix-ui/react-icons";
 import Wrapper from "../components/Wrapper";
 const CommentSection = () => {
   return (
-    <div className="w-[400px] h-[300px] p-6 box ">
+    <div className="w-[400px] h-[300px] p-6 box  ">
       <div className="flex gap-5  items-center">
         <Image src={man} alt="man" width={60} className="rounded-full object-cover object-center" />
         <div>
@@ -41,7 +41,13 @@ const CommentSection = () => {
 
 const CommentSectionPage = () => {
   return (
-    <Wrapper><div className='xs:h-auto xs:pb-10 lg:pb-0 w-full flex  flex-wrap mt-10 gap-10 border-b border-gray-400 xs:items-center xs:justify-center lg:justify-start lg:items-start'>
+    <Wrapper>
+      <h1 className="font-sans font-bold text-2xl lg:mb-7 xs:mt-12 lg:mt-0 xs:px-5 lg:px-0">
+       Reviews
+            </h1>
+      
+      <div className='xs:h-auto xs:pb-10 lg:pb-0 w-full flex  flex-wrap mt-10 gap-10 border-b border-gray-400 xs:items-center xs:justify-center lg:justify-start lg:items-start xs:px-5 lg:px-0'>
+       
     <CommentSection/>
     <CommentSection/>
     <CommentSection/>
