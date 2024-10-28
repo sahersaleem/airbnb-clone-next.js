@@ -26,30 +26,30 @@ import CommentSection from "./CommentSection";
 const ThirdSection = () => {
   return (
     <Wrapper>
-      <div className="w-full xs:h-auto lg:h-screen flex xs:flex-col lg:flex-row gap-20 pt-28">
+      <div className="w-full xs:h-auto lg:h-screen flex xs:flex-col lg:flex-row gap-20 pt-28 overflow-x-hidden">
         {/* First div */}
         <div className=" xs:w-[100vw] lg:w-[50vw]  h-auto lg:overflow-auto space-y-16 pb-8 xs:flex lg:block xs:flex-col justify-center items-center">
-          <div className="flex border border-gray-500 rounded-lg  lg:gap-8 items-center justify-center xs:flex-col lg:flex-row">
-            <div className="flex gap-1 xs:flex items-center justify-center">
+          <div className="flex border border-gray-500 rounded-lg xs:p-8 lg:p-0 lg:gap-8 items-center justify-center xs:flex-col lg:flex-row">
+            <div className="flex gap-1 xs:flex items-center justify-center xs:px-3 ">
               {" "}
-              <Image src={imageright} alt="image" width={40} height={40} />
+              <Image src={imageright} alt="image" width={40} height={40} className="xs:w-[30px] lg:w-[40px]"/>
               <h1 className="text-lg font-sans font-semibold text-center">
                 Guest favourite
               </h1>
-              <Image src={imageleft} alt="image" width={40} height={40} />
+              <Image src={imageleft} alt="image" width={40} height={40} className="xs:w-[30px] lg:w-[40px]" />
             </div>
 
             <p className="font-sans text-center xs:text-[9px] lg:text-[12px] xs:px-2">
               One Of the most loved homes on Airbnb Acoording to guest
             </p>
-            <div className="flex flex-col border-r border-gray-500 px-3 items-center justify-center">
-              <p className="xs:text-lg lg:text-xl font-bold font-sans">5.0</p>{" "}
+            <div className="flex flex-col xs:border-b lg:border-r border-gray-500 px-3 items-center justify-center">
+              <p className="xs:text-lg lg:text-xl font-bold font-sans xs:mb-1 lg:mb-0">5.0</p>{" "}
               <div className="flex items-center justify-center">
                 <StarFilledIcon /> <StarFilledIcon /> <StarFilledIcon />{" "}
                 <StarFilledIcon />
               </div>
             </div>
-            <h1 className="lg:text-lg font-bold font-sans">147 reviews</h1>
+            <h1 className="lg:text-lg font-bold font-sans xs:mt-3 lg:mt-0">147 reviews</h1>
           </div>
 
           <div className="flex gap-5  border-b border-gray-400 pb-4">

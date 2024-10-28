@@ -7,7 +7,7 @@ import { FaTwitter } from "react-icons/fa";
 import { FaInstagramSquare } from "react-icons/fa";
 const Footer = () => {
   return (
-    <div className="w-full h-auto bg-[#F7F7F7] mt-28 font-sans pb-9 overflow-x-hidden px-10">
+    <div className="w-full h-auto bg-[#F7F7F7] mt-28 font-sans pb-9 overflow-x-hidden lg:px-10">
         <Wrapper>
         <div className="flex p-7 xs:gap-y-12 lg:gap-60 lg:items-center text-[14px] justify-center xs:flex-col lg:flex-row">
       <div className="flex flex-col space-y-3">

@@ -6,20 +6,21 @@ import { Button } from "@/components/ui/button";
 import Wrapper from "../components/Wrapper";
 const Host = () => {
   return (
-    <div className="w-full xs:h-auto lg:h-[80vh] xs:px-5 lg:px-0">
-         <h1 className="font-sans font-bold text-2xl lg:mb-7 xs:mt-12 lg:mt-0 xs:px-5 lg:px-0">
-         Meet Your Host</h1>
+    <div className="w-full xs:h-auto lg:h-[80vh] xs:px-5 lg:py-8 xs:py-0 ">
+    
       <Wrapper>
+      <h1 className="font-sans font-bold text-2xl lg:mb-7 xs:mt-12 lg:mt-10 xs:px-5 lg:px-5">
+      Meet Your Host</h1>
         <div className="xs:pt-10 lg:pt-28 flex justify-center flex-col items-center">
          
-          <div className="flex justify-center items-center flex-col xs:space-y-6 lg:space-y-0">
+          <div className="flex justify-center items-center xs:flex-col lg:flex-row xs:space-y-6 lg:space-y-0 lg:space-x-16">
             <Card className="xs:w-[320px] lg:w-[400px] h-auto px-4 py-8 flex justify-between">
               <div className="flex flex-col items-center justify-center">
                 <Image
                   src={man}
                   alt="man"
                   width={150}
-                  className="object-cover object-center rounded-full xs:w-[100px] lg:w-[150px]"
+                  className="object-cover object-center rounded-full xs:w-[80px] xs:h-auto lg:w-[150px]"
                 />
                 <h1 className="text-2xl font-bold font-sans">Peter</h1>
                 <h2 className="text-xl font-semibold font-sans">Host</h2>
